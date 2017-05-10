@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <meta content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</HEAD>
+<BODY>
+    <div id="main">
+        <div>
+            <canvas id="canv" width="500px" height="500px"></canvas>
+        </div>
+        <div id="message" width="400px" height="200px"></canvas>
+    </div>
+    <script src="./eventHandler.js"></script>
+    <script src="./game.js"></script>
+    <script src="./render.js"></script>
+    <script src="./util.js"></script>
+    <script>
+     EventHandler.setEvents();
+     Render.init();
+    </script>
+    <style>
+     #canv {
+         height: 500px;
+         width: 500px;
+     }
+
+     #main {
+         height: 800px;
+         width: 500px;
+     }
+
+     #message {
+         height: 200px;
+         width: 400px;
+         border: solid;
+     }
+
+    </style>
+</BODY>
+</HTML>
